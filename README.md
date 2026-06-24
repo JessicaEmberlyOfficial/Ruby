@@ -11,8 +11,8 @@ A piece of software to assist in investigations.
   * [ThatsThem](https://thatsthem.com/) Support
   * [TruePeopleSearch](https://www.truepeoplesearch.com/) Support
   * [WhitePages](https://www.whitepages.com/) Support
-‎ㅤ
-ㅤ
+‎
+
 ## "How do I help?"
 You can help the development of Ruby by sending in a ticket with your changes.
 
