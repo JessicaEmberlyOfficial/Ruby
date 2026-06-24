@@ -13,7 +13,7 @@ A piece of software to assist in investigations.
   * [WhitePages](https://www.whitepages.com/) Support
 ‎ㅤ
 ㅤ
-## "How do I help?
+## "How do I help?"
 You can help the development of Ruby by sending in a ticket with your changes.
 
 ## Requirements
