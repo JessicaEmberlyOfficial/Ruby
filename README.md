@@ -20,8 +20,14 @@ You can help the development of Ruby by sending in a ticket with your changes.
 * Python
 
 ## Usage
-```git clone https://github.com/JessicaEmberlyOfficial/Ruby```
+```
+git clone https://github.com/JessicaEmberlyOfficial/Ruby
+```
 
-```cd Ruby```
+```
+cd Ruby
+```
 
-```python run.py```
+```
+python run.py
+```
