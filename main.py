@@ -91,6 +91,11 @@ def ruby():
   city = input("What is this person's city?: ")
   zip = input("What is this person's zip code?: ")
   address = input("What is this person's address?: ")
+  ec = input("What is this person's eye color?: ")
+  hc = input("What is this person's hair color?: ")
+  r = input("What is this person's race?: ")
+  eb = input("What is this person's ethnic background?: ")
+  notes = ("Please type in any notes, or leave this blank.: ")
   saveas = input("What do you want to save the file name as?: ")
   if (os.path.isfile(saveas)):
     print("File exists already, please choose a different name.")
@@ -102,7 +107,12 @@ def ruby():
 POI State: """ + state + """
 POI City: """ + city + """
 POI Zip Code: """ + zip + """
-POI Address: """ + address)
+POI Address: """ + address + """
+POI Eye Color: """ + ec + """
+POI Hair Color: """ + hc + """
+POI Race: """ + r + """
+POI Ethnic Background: """ + eb + """
+Notes: """ + notes)
      with open(saveas + ".txt", "r") as f:
        os.system("clear")
        print("""Wrote the following text to " + """ + saveas + """.txt:
