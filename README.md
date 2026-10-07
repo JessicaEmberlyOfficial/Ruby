@@ -14,7 +14,7 @@ A piece of software to assist in investigations.
 ‎
 
 ## "How do I help?"
-You can help the development of Ruby by sending in a ticket with your changes.
+You can help the development of Ruby by sending in a ticket with your changes, or by becoming a sponsor.
 
 ## Requirements
 * Python
