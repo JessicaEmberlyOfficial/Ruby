@@ -87,6 +87,7 @@ def ruby():
   firstname = input("What is this person's first name?: ")
   middlename = input("What is this person's middle name?: ")
   lastname = input("What is this person's last name?: ")
+  nickname = input("What is this person's nickname?: ")
   state = input("What is this person's state?: ")
   city = input("What is this person's city?: ")
   zip = input("What is this person's zip code?: ")
@@ -104,6 +105,7 @@ def ruby():
      with open(saveas + ".txt", "w") as f:
         f.write("""""" + 
 """POI: """ + firstname + " " + middlename + " " + lastname + """
+POI Nickname: """ + nickname + """
 POI State: """ + state + """
 POI City: """ + city + """
 POI Zip Code: """ + zip + """
