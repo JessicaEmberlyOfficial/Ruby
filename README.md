@@ -18,6 +18,7 @@ You can help the development of Ruby by sending in a ticket with your changes, o
 
 ## Requirements
 * Python
+* [Stra1n](https://github.com/JessicaEmberlyOfficial/Stra1n) (Optional)
 
 ## Usage
 ```
