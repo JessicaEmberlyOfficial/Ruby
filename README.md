@@ -37,5 +37,5 @@ python run.py
 
 ### Usage Notes
 ```
-You can run the (*.txt) file contents, post-creation, into Stra1n, and essentially encrypt your file if you customized your Stra1n's (*.ini) file.
+You can run the (*.txt) file, post-creation, into Stra1n, and essentially encrypt your file if you customized your Stra1n's (*.ini) file.
 ```
