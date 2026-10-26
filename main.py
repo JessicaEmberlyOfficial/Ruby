@@ -1,5 +1,6 @@
 import os
 import time
+import random
 def start():
   os.system("clear")
   print("""
@@ -20,6 +21,10 @@ def start():
   if question == "f":
     os.system("clear")
     finder()
+
+  if question == "c":
+    os.system("clear")
+    cng()
     
   if question == "h":
     os.system("clear")
@@ -29,30 +34,31 @@ def help():
   question = input("(r)uby, or (f)inder, or (c)ng?: ")
   if question == "r":
     os.system("clear")
-    print("Ruby is a people database creator for investigators. [5]")
-    time.sleep(1)
-    os.system("clear")
-    print("Ruby is a people database creator for investigators. [4]")
-    time.sleep(1)
-    os.system("clear")
-    print("Ruby is a people database creator for investigators. [3]")
-    time.sleep(1)
-    os.system("clear")
-    print("Ruby is a people database creator for investigators. [2]")
-    time.sleep(1)
-    os.system("clear")
-    print("Ruby is a people database creator for investigators. [1]")
-    time.sleep(1)
+    num = 5
+    while num != 1:
+      print("Ruby is a people database creator for investigators. [" + str(num) + "]")
+      time.sleep(1)
+      os.system("clear")
+      num -= 1
     start()
   if question == "f":
     os.system("clear")
     num = 5
     while num != 1:
-      print("Finder redirects you to people finder sites with the data you give it. [" + num + "]")
+      print("Finder redirects you to people finder sites with the data you give it. [" + str(num) + "]")
+      time.sleep(1)
+      os.system("clear")
       num -= 1
     start()
-    if question == "c":
-      
+  if question == "c":
+    os.system("clear")
+    num = 5
+    while num != 1:
+      print("Case Number Generator helps create case numbers. [" + str(num) + "]")
+      time.sleep(1)
+      os.system("clear")
+      num -= 1
+    start()
     
 def finder():
   firstname = input("What is this person's first name?: ")
@@ -110,3 +116,26 @@ Notes: """ + notes)
        os.system("clear")
        print("""Wrote the following text to " + """ + saveas + """.txt:
        """ + f.read())
+
+def cng():
+  os.system("clear")
+  number = random.randint(1, 9)
+  initial = input("Please input the first, middle, and last initial of the POI (e.g. pcp): ")
+  os.system("clear")
+  state = input("Please input the state of the POI (e.g. KS): ")
+  file = os.getcwd() + "/casenumber.txt"
+  if os.path.isfile(file):
+    with open(file, "r") as f:
+      current_number = f.read()
+      new_number = int(current_number)
+      new_number += 1
+      os.system("clear")
+      print("Your case number is: " + initial + "-" + state + "-" + str(new_number))
+      f.close()
+    with open(file, "w") as f:
+      f.write("" + str(new_number))
+  else:
+    with open(file, "w") as f:
+      number = f.write("1")
+      os.system("clear")
+      print("Your case number is: " + initial + "-" + state + "-1")
