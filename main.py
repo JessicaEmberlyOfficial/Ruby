@@ -12,7 +12,7 @@ def start():
 *╚═╝  ╚═╝ ╚═════╝ ╚═════╝    ╚═╝   *
 ************************************
 """)
-  question = input("(r)uby, or (f)inder, or (h)elp?: ")
+  question = input("(r)uby, or (f)inder, or (c)ng, or (h)elp?: ")
   if question == "r":
     os.system("clear")
     ruby()
@@ -26,7 +26,7 @@ def start():
     help()
 
 def help():
-  question = input("(r)uby, or (f)inder?: ")
+  question = input("(r)uby, or (f)inder, or (c)ng?: ")
   if question == "r":
     os.system("clear")
     print("Ruby is a people database creator for investigators. [5]")
@@ -46,22 +46,13 @@ def help():
     start()
   if question == "f":
     os.system("clear")
-    print("Finder redirects you to people finder sites with the data you give it. [5]")
-    time.sleep(1)
-    os.system("clear")
-    print("Finder redirects you to people finder sites with the data you give it. [4]")
-    time.sleep(1)
-    os.system("clear")
-    print("Finder redirects you to people finder sites with the data you give it. [3]")
-    time.sleep(1)
-    os.system("clear")
-    print("Finder redirects you to people finder sites with the data you give it. [2]")
-    time.sleep(1)
-    os.system("clear")
-    print("Finder redirects you to people finder sites with the data you give it. [1]")
-    time.sleep(1)
-    os.system("clear")
+    num = 5
+    while num != 1:
+      print("Finder redirects you to people finder sites with the data you give it. [" + num + "]")
+      num -= 1
     start()
+    if question == "c":
+      
     
 def finder():
   firstname = input("What is this person's first name?: ")
