@@ -11,6 +11,8 @@ A piece of software to assist in investigations.
   * [ThatsThem](https://thatsthem.com/) Support
   * [TruePeopleSearch](https://www.truepeoplesearch.com/) Support
   * [WhitePages](https://www.whitepages.com/) Support
+* Case Number Generator
+  * Generates case numbers.
 ‎
 
 ## "How do I help?"
